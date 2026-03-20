@@ -1,0 +1,72 @@
+body{
+    background-color:#F0F2F5;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #1A3A5F;
+    margin-top: 0;
+}
+
+/*1.Estilo bese (Móvil): 2 columnas*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    justify-items: center;
+}
+
+@media (min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.galeria img{
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    gap: 20px;
+}
+
+.galeria img:hover{
+    transform: scale(1.04);
+    z-index: 10;
+    position: relative;
+}
+
+a samp{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.arriba{
+    border-bottom: 2px solid #5C8D89;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.abajo{
+    border-top: 2px solid #5C8D89;
+    margin-top: 10px;
+    text-align: center;
+}
