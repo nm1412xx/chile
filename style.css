@@ -9,6 +9,10 @@ h1{
     margin: 0;
 }
 
+p{
+    margin:3px;
+    padding:0;
+
 /*1.Estilo bese (Móvil): 2 columnas*/
 
 .galeria{
