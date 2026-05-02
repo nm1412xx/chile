@@ -48,12 +48,11 @@ h1{
 
 .galeria img{
     width: 100%;
-    max-width: 235px;
-    object-fit: cover;
+    height: 180px;
+    object-fit: cover;     
     display: block;
     border-radius: 20px;
-    transition: transform 0.3s;
-    gap: 20px;
+    transition: transform 0.3s ease;
 }
 
 .galeria img:hover{
